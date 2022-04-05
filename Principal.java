@@ -1,18 +1,27 @@
 public class Principal {
     
     public static void main(String[] args) {
-        
+
         Aluno a = new Aluno();
 
-        a.setNome("Dalton");
-        a.setRa("123123123123");
-        a.setSala("Segundo ano");
         a.adicionar();
-
-        System.out.println(a.getNome());
-        System.out.println(a.getRa());
-        System.out.println(a.getSala());
+        a.excluir();
+        a.pesquisar();
+        
+        System.out.println(a.adicionar());
+        System.out.println(a.excluir());
         System.out.println(a.pesquisar());
+
+        Professor p = new Professor();
+
+        p.adicionar();
+        p.excluir();
+        p.pesquisar();
+
+        System.out.println(p.adicionar());
+        System.out.println(p.excluir());
+        System.out.println(p.pesquisar());
+        
     }
 
 }

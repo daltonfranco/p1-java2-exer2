@@ -1,7 +1,7 @@
 public interface IPessoa{
 
-    public abstract void adicionar();
-    public abstract void excluir();
-    public abstract void pesquisar();
+    public abstract String adicionar();
+    public abstract String excluir();
+    public abstract String pesquisar();
 
 }

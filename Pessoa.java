@@ -1,25 +1,24 @@
 public class Pessoa implements IPessoa{
     
     @Override
-    public void adicionar(boolean adicionar){
+    public String adicionar(){
         
-        this.adicionar = adicionar;
+        return "Adicionando pessoa";
 
     }
 
     @Override
-    public boolean excluir(){
-        return true;
+    public String excluir(){
+
+        return "Excluindo Pessoa";
+
     }
 
     @Override
     public String pesquisar(){
 
-        if(adicionar() == true){
-            System.out.println("Adicionado com sucesso");
-        }
-
-        return "Pesquisa concluida";
+        return "Pesquisando pessoa";
+        
     }
 
 }
